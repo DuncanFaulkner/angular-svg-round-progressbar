@@ -113,7 +113,7 @@ var RoundProgressComponent = /** @class */ (function () {
     /** Change detection callback. */
     RoundProgressComponent.prototype.ngOnChanges = function (changes) {
         if (changes.current) {
-            this._animateChange(changes.current.previousValue, changes.current.currentValue * 2);
+            this._animateChange(changes.current.previousValue, changes.current.currentValue);
         }
         else {
             this._setPath(this.current);
